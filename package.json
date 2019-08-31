@@ -5,11 +5,10 @@
   "main": "server.js",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pnakaj Patel(http://pankaj.pro)",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
