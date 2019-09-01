@@ -5,9 +5,10 @@ const languages = require('../constants/languages');
 const languagesKeys = languages.map(lang => lang.locale);
 
 const getRandomLanguages = count => {
-  return new Array(count)
+  const langs = new Array(count)
     .fill(null)
     .map(() => faker.random.arrayElement(languagesKeys));
+  return langs.filter((lang, i) => langs.indexOf(lang) === i);
 };
 const getReviewsCount = () => faker.random.number({ min: 1, max: 50 });
 
